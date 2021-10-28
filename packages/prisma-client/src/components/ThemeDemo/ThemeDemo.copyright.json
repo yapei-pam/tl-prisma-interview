@@ -1,0 +1,34 @@
+{
+    "states": {
+        "enabled": {
+            "title": "Enabled state",
+            "description": "The enabled state is the default state of the component. It signifies that the component is interactive and actionable."
+        },
+        "hover": {
+            "title": "Hover state",
+            "description": "The hover state is triggered by a mouse event and does not exist on devices that don’t use mouse navigation. It indicates to the user that they can interact with it. It should be clear and visually different from the enabled and focus state."
+        },
+        "focus": {
+            "title": "Focus state",
+            "description": "The focus state is used to highlight a component that is ready to receive an input. For example, inputs can include a click, entry of data, or selection between multiple options. There can only be one focused element at a time. All interactive elements on a page should be able to receive focus by navigating with a keyboard. This should be visually different to the hover and enabled state. Focus is often used for components that can be active/inactive."
+        },
+        "disabled": {
+            "title": "Disabled state",
+            "description": "Use the disabled state when a component should not be interacted with at that specific time. This state usually changes once a user has completed a required action."
+        }
+    },
+    "customisations": {
+        "color": {
+            "title": "Colour",
+            "description": "The colour by default"
+        },
+        "bgColor": {
+            "title": "Background colour",
+            "description": "The background colour by default"
+        },
+        "hoverBgColor": {
+            "title": "Hover background colour",
+            "description": "The background colour on hover"
+        }
+    }
+}

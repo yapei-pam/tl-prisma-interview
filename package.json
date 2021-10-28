@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "lerna link",
+    "start": "lerna run start --include-filtered-dependencies --stream --parallel",
+    "build": "lerna run build --include-filtered-dependencies --stream --parallel",
+    "test": "lerna run test --stream --parallel",
+    "clean": "lerna clean -y"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}

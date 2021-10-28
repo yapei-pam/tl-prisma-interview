@@ -1,0 +1,68 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# typecript
+tsconfig.tsbuildinfo
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# out dirs
+dist
+build
+lib
+
+.cache
+.eslintcache
+
+# misc
+.DS_Store
+.env.*
+.history
+.vscode
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npmrc
+
+.idea
+.docz
+
+Caddyfile
+*.pem
+
+# documentation
+/public
+
+# Lerna files
+lerna-debug.log
+
+*tsbuildinfo
+
+circle.json
+pipeline.json
+workflow.json
+
+config.*.yml
+
+.env.*
+
+todo.txt
+
+junit.xml
+
+# cypress
+.nyc_output
+
+# storybook
+*storybook.log
+storybook-static
+
+# cypress videao
+*.mp4
+
+*.log
+dir*
