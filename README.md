@@ -78,21 +78,21 @@ Add the following tag in your index.html
 
 The button will have 4 states with a specific style for each theme
 
-[enabled_theme1]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278805349_image.png
-[enabled_theme2]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278763764_image.png
-[hover_theme1]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278817470_image.png
-[hover_theme2]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278773659_image.png
-[focus_theme1]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278819267_image.png
-[focus_theme2]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278777532_image.png
-[disabled_theme1]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278835274_image.png
-[disabled_theme2]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278789256_image.png
+[enabled_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278805349_image.png
+[enabled_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278763764_image.png
+[hover_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278817470_image.png
+[hover_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278773659_image.png
+[focus_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278819267_image.png
+[focus_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278777532_image.png
+[disabled_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278835274_image.png
+[disabled_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278789256_image.png
 
 |          | Theme 1                                                                                          |                    | Theme 2                                                                                                 |                    |
 | -------- | ------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------- | ------------------ |
-| Enabled  | `color`: white<br>`bgColor`: azure<br>`border`: none<br>`opacity`: normal                        | ![enabled_theme1]  | `color`: sun<br>`bgColor`: white<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![enabled_theme2]  |
-| Hover    | `color`: white<br>`bgColor`: cloud burst<br>`border`: none<br>`opacity`: normal                  | ![hover_theme1]    | `color`: white<br>`bgColor`: sun<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![hover_theme2]    |
-| Focus    | `color`: white<br>`bgColor`: cloud burst<br>`border`: none<br>`opacity`: normal                  | ![focus_theme1]    | `color`: white<br>`bgColor`: sun<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![focus_theme2]    |
-| Disabled | `color`: white<br>`bgColor`: azure<br>`border`: none<br>`opacity`: disabled<br>`cursor`: default | ![disabled_theme1] | `color`: sun<br>`bgColor`: white<br>`border`: 1px solid sun<br>`opacity`: disabled<br>`cursor`: default | ![disabled_theme2] |
+| Enabled  | `color`: white<br>`bgColor`: azure<br>`border`: none<br>`opacity`: normal                        | ![enabled_theme-one]  | `color`: sun<br>`bgColor`: white<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![enabled_theme-two]  |
+| Hover    | `color`: white<br>`bgColor`: cloud burst<br>`border`: none<br>`opacity`: normal                  | ![hover_theme-one]    | `color`: white<br>`bgColor`: sun<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![hover_theme-two]    |
+| Focus    | `color`: white<br>`bgColor`: cloud burst<br>`border`: none<br>`opacity`: normal                  | ![focus_theme-one]    | `color`: white<br>`bgColor`: sun<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![focus_theme-two]    |
+| Disabled | `color`: white<br>`bgColor`: azure<br>`border`: none<br>`opacity`: disabled<br>`cursor`: default | ![disabled_theme-one] | `color`: sun<br>`bgColor`: white<br>`border`: 1px solid sun<br>`opacity`: disabled<br>`cursor`: default | ![disabled_theme-two] |
 
 !!! warning For the disabled state, add the style to prevent the user to trigger any actions
 
@@ -126,8 +126,20 @@ To avoid that, TrueLayer is building its Design System by producing clean and ma
 
 <br /><br />
 
+# Setup
+
+To run the project, install it locally using yarn
+
+```
+yarn install
+yarn build
+yarn start
+```
+
+!!! warning You have to run `yarn build` first before running `yarn start`. You're more than welcome to modify the script if you feel it can be improved
+
 # Appendinx
 - [**Client**](./packages/prisma-client/README.md#Overview)
 - [**Components**](./packages/prisma-components/README.md#Overview)
-- [**Theme1**](./packages/prisma-theme1/README.md#Overview)
-- [**Theme2**](./packages/prisma-theme2/README.md#Overview)
+- [**theme-one**](./packages/prisma-theme-one/README.md#Overview)
+- [**theme-two**](./packages/prisma-theme-two/README.md#Overview)

@@ -131,10 +131,10 @@ Your solution has to produce the same previews for the Button component.
 
 # Mandatory
 
-- In the file `src/externals/prisma-theme1.tsx`
+- In the file `src/externals/prisma-theme-one.tsx`
   - Use your TH1Button + Th1Theme
   - Set the TH1Customisations to match the [**enabled**](../../README.md#States) state of the TH1Button
-- In the file `src/externals/prisma-theme2.tsx`
+- In the file `src/externals/prisma-theme-two.tsx`
   - Use your TH2Button + Th2Theme
   - Set the TH2Customisations to match the [**enabled**](../../README.md#States)  state of the TH2Button
 
@@ -144,6 +144,7 @@ Your solution has to produce the same previews for the Button component.
 
 - Improve the solution
 - Explain all your improvements in the **Improvments** section below
+- Test your solution
 
 <br /><br />
 

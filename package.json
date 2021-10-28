@@ -7,9 +7,10 @@
   "scripts": {
     "postinstall": "lerna link",
     "start": "lerna run start --include-filtered-dependencies --stream --parallel",
-    "build": "lerna run build --include-filtered-dependencies --stream --parallel",
+    "build": "lerna run build --include-filtered-dependencies --stream",
+    "build:clean": "lerna run clean --stream --parallel",
     "test": "lerna run test --stream --parallel",
-    "clean": "lerna clean -y"
+    "clean": "lerna clean -y && rm -rf node_modules"
   },
   "devDependencies": {
     "lerna": "^3.20.2"

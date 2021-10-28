@@ -1,5 +1,5 @@
-import { TH1Button, TH1Theme, TH1Customisations} from './externals/prisma-theme1'
-import { TH2Button, TH2Theme, TH2Customisations } from './externals/prisma-theme2'
+import { TH1Button, TH1Theme, TH1Customisations} from './externals/prisma-theme-one'
+import { TH2Button, TH2Theme, TH2Customisations } from './externals/prisma-theme-two'
 import { ThemeDemo } from "./components"
 import './App.css';
 

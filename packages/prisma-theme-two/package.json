@@ -1,7 +1,7 @@
 {
-  "name": "@tl-prisma/components",
+  "name": "@tl-prisma/theme-two",
   "version": "1.0.0",
-  "description": "Propose a list of comonents agnostics of styles",
+  "description": "Propose a list of comonents styled with the Theme 1",
   "author": "TrueLayer",
   "license": "MIT",
   "main": "dist/index.js",
@@ -24,12 +24,14 @@
   },
   "peerDependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "@tl-prisma/components": "^1.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@tl-prisma/components": "^1.0.0",
     "@types/jest": "^25.1.4",
     "@types/node": "^12.12.38",
     "@types/react": "^16.9.27",
@@ -61,7 +63,6 @@
     "dist"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/react-fontawesome": "^0.1.16"
+    "@tl-prisma/components": "^1.0.0"
   }
 }
