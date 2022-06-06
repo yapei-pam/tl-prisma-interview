@@ -19,7 +19,6 @@ interface ThemeDemoProps {
 
 export const ThemeDemo = (props: ThemeDemoProps) => {
     const { title, description, children, theme, customisations } = props
-    
     return (
         <ThemeProvider theme={theme}>
             <Root>
@@ -30,9 +29,9 @@ export const ThemeDemo = (props: ThemeDemoProps) => {
                     <Grid item xs={12}>
                         <ThemeStates states={copyright.states}>{children}</ThemeStates>
                     </Grid>
-                    <Grid item xs={12}> 
-                        <ThemePlayground 
-                            customisations={pick(copyright.customisations, Object.keys(customisations))} 
+                    <Grid item xs={12}>
+                        <ThemePlayground
+                            customisations={pick(copyright.customisations, Object.keys(customisations))}
                             defaultCustomisations={customisations}
                         >
                                 {children}

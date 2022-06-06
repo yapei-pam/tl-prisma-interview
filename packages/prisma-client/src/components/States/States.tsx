@@ -1,4 +1,5 @@
-import { StatesContext } from '../../externals/prisma-components'
+import * as React from 'react'
+import { StatesContext } from '@tl-prisma/components'
 import { Grid } from "../../externals/material-ui"
 import { State } from "../State"
 
@@ -12,10 +13,11 @@ export const States = (props: StatesProps) => {
 
     const renderState = (key: string) => {
         const state = states[key]
+
         return (
-            <Grid item xs={12} md={5}>
-                <StatesContext.Provider value={{ state: key }}>
-                    <State 
+            <Grid item xs={12} md={5} key={key}>
+                <StatesContext.Provider value={{ state: key, playground: false }}>
+                    <State
                         title={state.title}
                         description={state.description}
                     >

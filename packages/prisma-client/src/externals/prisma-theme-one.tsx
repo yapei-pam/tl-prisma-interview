@@ -1,23 +1,28 @@
-/**
- * TODO: Replace the TH1Button by the one coming from the library 'prisma-theme-one'
- */
+import { useRef } from 'react';
+import { useStates } from '@tl-prisma/components'
+import { ThemeOneButton, default as themeOneStyles } from '@tl-prisma/theme-one'
+
 interface TH1ButtonProps {
     label: string
 }
 
 export const TH1Button = (props: TH1ButtonProps) => {
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
+    const { label, ...rest } = props;
+    useStates({ ref: buttonRef })
     return (
-        <div>Plug your button here</div>
+        <ThemeOneButton
+            label={label}
+            ref={buttonRef}
+            {...rest}
+        />
     )
 }
 
-/**
- * TODO: Replace the TH1Theme by the one coming from the library 'prisma-theme-one'
- */
-export const TH1Theme = {}
+export const TH1Theme = { ...themeOneStyles }
 
-/**
- * TODO: Set the customisations matching the enabled state of the TH1Button
- * See the Customisations/States section in the taask description
- */
-export const TH1Customisations = {}
+export const TH1Customisations = {
+    color: themeOneStyles.palette.white,
+    bgColor: themeOneStyles.palette.azure,
+    hoverBgColor: themeOneStyles.palette.cloudBurst
+}

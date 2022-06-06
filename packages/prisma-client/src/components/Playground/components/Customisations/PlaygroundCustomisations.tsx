@@ -19,7 +19,7 @@ export const PlaygroundCustomisations = (props: PlaygroundCustomisationsProps) =
 
     const renderCustomisation = (key: string) => {
         const customisation = customisations[key]
-        return <ColorPicker id={key} label={customisation.title} onChange={onChange} value={value[key]} />
+        return <ColorPicker key={key} id={key} label={customisation.title} onChange={onChange} value={value[key]} />
     }
 
     const renderCustomisations = () => {

@@ -3,17 +3,21 @@ import { createContext, useContext, useEffect } from 'react'
 export interface StatesContextProps {
   state?: string
   playground?: boolean
+  customisations?: any
 }
 
 export const StatesContext = createContext<StatesContextProps>({
   state: 'enabled'
 })
+StatesContext.displayName = 'StatesContext'
+
 
 /**
  * Simulate a state for the Button component. It is used by the client to put the component in a specific state
  */
 export const useStates = ({ ref }: { ref: React.RefObject<HTMLElement> }) => {
-  const { state, playground } = useContext(StatesContext)
+  const { state, playground, customisations } = useContext(StatesContext)
+  console.log('hello', { state, playground })
 
   useEffect(() => {
     const element = ref.current
@@ -32,5 +36,5 @@ export const useStates = ({ ref }: { ref: React.RefObject<HTMLElement> }) => {
     if (!playground) {
       element.classList.add(`sim-readonly`)
     }
-  }, [ref, state, playground])
+  }, [ref, state, playground, customisations])
 }

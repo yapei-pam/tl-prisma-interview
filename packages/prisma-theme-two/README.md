@@ -29,3 +29,7 @@ This library will contains the Button component style accordingly to the Theme 2
 # Architecture
 
 Explain your choices and anything you would have to do but did not have time
+
+# Comments
+
+- Updated build command to include option `--jsx React.createElement ` for microbundle fix on the known issue of TypeScript is unable to resolve Fragments when the jsxFactory option is set (see https://github.com/developit/microbundle/pull/623 for PR)
